@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="aimbot.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="interfaces.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="netvars.cpp" />
+    <ClCompile Include="offsets.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="variables.cpp" />
+    <ClCompile Include="visuals.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aimbot.hpp" />
+    <ClInclude Include="clientmode.hpp" />
+    <ClInclude Include="cmove.hpp" />
+    <ClInclude Include="draw.hpp" />
+    <ClInclude Include="drawmodel.hpp" />
+    <ClInclude Include="engineclient.hpp" />
+    <ClInclude Include="enginetrace.hpp" />
+    <ClInclude Include="entities.hpp" />
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="framestage.hpp" />
+    <ClInclude Include="gloves.hpp" />
+    <ClInclude Include="hooking.hpp" />
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="iniwriter.hpp" />
+    <ClInclude Include="interfaces.hpp" />
+    <ClInclude Include="lagcomp.hpp" />
+    <ClInclude Include="materials.hpp" />
+    <ClInclude Include="math.hpp" />
+    <ClInclude Include="menu.hpp" />
+    <ClInclude Include="misc.hpp" />
+    <ClInclude Include="modelsinfo.hpp" />
+    <ClInclude Include="mouse.hpp" />
+    <ClInclude Include="netvars.hpp" />
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="paintraverse.hpp" />
+    <ClInclude Include="recvprop.hpp" />
+    <ClInclude Include="render.hpp" />
+    <ClInclude Include="skins.hpp" />
+    <ClInclude Include="surface.hpp" />
+    <ClInclude Include="usercmd.hpp" />
+    <ClInclude Include="varhook.hpp" />
+    <ClInclude Include="variables.hpp" />
+    <ClInclude Include="vector.hpp" />
+    <ClInclude Include="visuals.hpp" />
+    <ClInclude Include="weapon.hpp" />
+  </ItemGroup>
+</Project>

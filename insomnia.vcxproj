@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aimbot.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="interfaces.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="netvars.cpp" />
+    <ClCompile Include="offsets.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="variables.cpp" />
+    <ClCompile Include="visuals.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aimbot.hpp" />
+    <ClInclude Include="clientmode.hpp" />
+    <ClInclude Include="cmove.hpp" />
+    <ClInclude Include="draw.hpp" />
+    <ClInclude Include="drawmodel.hpp" />
+    <ClInclude Include="engineclient.hpp" />
+    <ClInclude Include="enginetrace.hpp" />
+    <ClInclude Include="entities.hpp" />
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="framestage.hpp" />
+    <ClInclude Include="gloves.hpp" />
+    <ClInclude Include="hooking.hpp" />
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="iniwriter.hpp" />
+    <ClInclude Include="interfaces.hpp" />
+    <ClInclude Include="lagcomp.hpp" />
+    <ClInclude Include="materials.hpp" />
+    <ClInclude Include="math.hpp" />
+    <ClInclude Include="menu.hpp" />
+    <ClInclude Include="misc.hpp" />
+    <ClInclude Include="modelsinfo.hpp" />
+    <ClInclude Include="mouse.hpp" />
+    <ClInclude Include="netvars.hpp" />
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="paintraverse.hpp" />
+    <ClInclude Include="recvprop.hpp" />
+    <ClInclude Include="render.hpp" />
+    <ClInclude Include="skins.hpp" />
+    <ClInclude Include="surface.hpp" />
+    <ClInclude Include="usercmd.hpp" />
+    <ClInclude Include="varhook.hpp" />
+    <ClInclude Include="variables.hpp" />
+    <ClInclude Include="vector.hpp" />
+    <ClInclude Include="visuals.hpp" />
+    <ClInclude Include="weapon.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B47833C2-CC00-4490-A751-A16553374E0E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>insomnia</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <TargetName>insomnia</TargetName>
+    <OutDir>..\..\insomnia</OutDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CSSBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
